@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  height: 100%;
+  overflow: hidden;
+}
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#app1 {
+  width: 50%;
+  height: 50%;
+  border: 1px solid red;
+}
+#app1 span {
+  margin-left: 120px;
+}
+#app1 .button-wrapper {
+  display: flex;
+}
+#app1 button {
+  margin-right: 10px;
+  width: 50px;
+  height: 30px;
+}
+
+#app2 {
+  width: 50%;
+  height: 50%;
+  border: 1px solid red;
+  position: relative;
+}
+#app2 .tab-bar ul {
+  list-style: none;
+  width: 100%;
+  height: 30px;
+  display: flex;
+}
+#app2 li {
+  width: 50%;
+  border: 1px solid red;
+  background-color: rgb(250, 205, 205);
+  text-align: center;
+  line-height: 30px;
+}
+#app2 li.highlight {
+  background-color: yellow;
+}
+#app2 .content {
+  width: 100%;
+  height: 80%;
+  position: absolute;
+  display: none;
+}
+#app2 .content.active {
+  display: block;
+}
+
+#app3 {
+  width: 50%;
+  height: 50%;
+  border: 1px solid red;
+  position: relative;
+}
+#app3 .square {
+  position: absolute;
+  top: 30%;
+  left: 30px;
+  width: 100px;
+  height: 100px;
+  background-color: turquoise;
+  transition: 1s transform;
+}
+#app3 .square.slide {
+  transform: translate(600px);
+}
+
+#app4 {
+  width: 50%;
+  height: 50%;
+  border: 1px solid red;
+  position: relative;
+}
+#app4 .circle {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-color: tomato;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#app4 .circle.color {
+  animation: change 2s infinite alternate;
+}
+@keyframes change {
+  0% {
+    background-color: tomato;
+  }
+  50% {
+    background-color: #55efc4;
+  }
+  100% {
+    background-color: #0984e3;
+  }
+}
+
+
+/*# sourceMappingURL=/main.1f19ae8e.css.map */

@@ -1,0 +1,18 @@
+#app3 {
+  width: 50%;
+  height: 50%;
+  border: 1px solid red;
+  position: relative;
+}
+#app3 .square {
+  position: absolute;
+  top: 30%;
+  left: 30px;
+  width: 100px;
+  height: 100px;
+  background-color: turquoise;
+  transition: 1s transform;
+}
+#app3 .square.slide {
+  transform: translate(600px);
+}

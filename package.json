@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "a.js": "0.0.1",
+    "global.css": "^1.1.0",
+    "jquery": "^3.5.1"
+  },
+  "name": "mvc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
